@@ -15,15 +15,11 @@ export default class CardBack extends Component {
     let result
 
     if(imdbRating==null){
-      result = <h4>No Rating Found</h4>
+      return <h4>No Rating Found</h4>
     } else {
-      result = <img src={imgMapper[imdbRating]} alt="" />
+      return <img src={imgMapper[imdbRating]} alt="" />
     }
-    return(
-      <div>
-        {result}
-      </div>
-    )
+
     // implement meeeee! See the readme for instructions
   }
 
